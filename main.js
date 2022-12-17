@@ -1,5 +1,11 @@
+var expForm = document.getElementById("expense-form")
+
+expForm.addEventListener("submit", save)
+
+
 function save(event) {
     event.preventDefault();
+    console.log(event)
     const expenseAmount = document.getElementById('expenseamount').value;
     const description = document.getElementById('description').value;
     const category = document.getElementById('category').value;
